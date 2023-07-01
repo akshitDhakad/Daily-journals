@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Montserrat:wght@600&display=swap');
+
+body{
+  /* background-color: red; */
+  margin: 0px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.box{
+  display: grid;
+  height: 100vh;
+  max-width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15% 70% 15%;
+  gap: 5px;
+}
+
+.item1{
+  background-color: #47A992;
+  grid-column: span 2;
+  padding: 10px;
+}
+
+.item2{
+  background-color: white;
+}
+.item4{
+  background-color: #47A992;
+  grid-column: span 2;
+}
+
+.header{
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header{
+  font-size: 2rem;
+  font-family: sans-serif;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+.header span{
+  margin-right: 10px;
+  padding: 5px;
+}
+.header span:hover{
+  margin-right: 10px;
+  outline: 1px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  
+}
+
+.footer{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact {
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+} 
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+} 
+
+.login-box {
+  width: 25%;
+  height: max-content;
+  padding: 20px;
+  background-color: #797979;
+  border-radius: 1em;
+  box-shadow: 0 0 5px #726f77; 
+  color: #ffffff;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-bottom: 45px;
+  font-size: 200%;
+  text-shadow: 0 0 5px #cacaca; 
+}
+
+p {
+  margin-top: 18px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  
+  font-size: 70%;
+  text-shadow: 0 0 5px #cacaca; 
+}
+
+.form-group {
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea[type="text"] {
+  width: 100%;
+  padding: 15px;
+  border-radius: 1em;
+  border: 2px solid #535353;
+  background-color: lightgrey;
+}
+
+button {
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  margin-top: 40px;
+  background-color: #5d5d5d;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  border-radius: 1em;
+  cursor: pointer;
+  box-shadow: 0 0 5px #fff; 
+}
+
+button:hover {
+  color: rgb(223, 223, 223);
+  box-shadow: 0 0 5px #fff; 
+  animation: glowing 7s infinite;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px #fff;
+  }
+  25% {
+    box-shadow: 0 0 5px #276e88;
+  }
+  50% {
+    box-shadow: 0 0 20px #399062;
+  }
+  65% {
+    box-shadow: 0 0 5px #8070bb;
+  }
+  95% {
+    box-shadow: 0 0 5px #bfbfc1;
+  }
+  100% {
+    box-shadow: 0 0 5px #ffffff;
+  }
+}

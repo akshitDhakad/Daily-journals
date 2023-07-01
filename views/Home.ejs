@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily journals</title>
+    <!-- google fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Julee&family=McLaren&family=Montserrat:ital,wght@0,400;0,700;0,800;1,300;1,400;1,600&family=Poppins:wght@200&family=Roboto+Condensed&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,400;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- interanal style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="item item1"><%- include('header'); -%></div>
+        <div class="item item3">
+            <div class="home">
+                <% data.forEach(item => { %>
+                    <h3><%= item.title %>:</h3>
+                    <% if (item.content.length >= 100) { %>
+                        <p><%= item.content.substring(0, 100) %> <a href="/Blog?blog=<%= item.title.trim() %>"class="readmore">read more...</a></p>
+                        <br/><br/>
+                    <% } else { %>
+                        <p><%= item.content %></p><br/><br/>
+                    <% } %>
+                <% }) %>
+            </div>
+        </div>
+        <div class="item item4"><%- include('footer'); -%></div>
+    </div>
+</body>
+</html>

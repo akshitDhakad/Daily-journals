@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily-Journals</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="item item1"><%- include('header'); -%></div>
+        <div class="item item3">
+            <div class="blog">
+                <h1><%= data.title %></h1>
+                <p> <%= data.content %> </p>
+            </div>
+            
+        </div>
+      
+        <div class="item item4"><%- include('footer'); -%></div>
+    </div>
+</body>
+</html>

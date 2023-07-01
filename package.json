@@ -1,0 +1,29 @@
+{
+  "name": "daily-journals",
+  "version": "1.0.0",
+  "description": "Daily-journals",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshitDhakad/Daily-journals.git"
+  },
+  "keywords": [
+    "daily-journals"
+  ],
+  "author": "akshit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akshitDhakad/Daily-journals/issues"
+  },
+  "homepage": "https://github.com/akshitDhakad/Daily-journals#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "ejs-lint": "^2.0.0",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.1"
+  }
+}
